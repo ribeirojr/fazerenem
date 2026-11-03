@@ -1,0 +1,13 @@
+{
+  "name": "lonatoga-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "python3 tools/serve.py",
+    "test": "python3 -m pytest -q && node scripts/dom_test.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0",
+    "pyodide": "0.28.0"
+  }
+}

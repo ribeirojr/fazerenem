@@ -1,0 +1,14 @@
+[project]
+name = "lonatoga"
+version = "0.1.0"
+description = "Da Lona a Toga: do acampamento ao titulo da terra, passando pelo Enem"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Sem cache nem .pyc dentro do pacote que o navegador baixa
+addopts = "-p no:cacheprovider"
